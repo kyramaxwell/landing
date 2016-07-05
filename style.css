@@ -1,0 +1,189 @@
+.cover {
+  background-image: url(http://www.wallpapereast.com/static/images/Cool-Wallpaper-FBC.jpg);
+  background-size: cover;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+  display: inline;
+}
+
+h1 {
+  font-size: 3.61rem; /* Size copied from slack.com homepage */
+  justify-content: center;
+}
+
+p {
+  font-size: 1.38rem; /* Size copied from slack.com homepage */
+  justify-content: center;
+}
+
+.italic {
+  font-style: italic;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+nav * {
+  display: inline-block;
+}
+footer * {
+  display: inline-block;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* justify-content: flex-start | flex-end | center | space-between | space-around */
+  align-items: center;
+  /* align-items: flex-start | flex-end | center | baseline | stretch */
+  flex-direction: row;
+  /*flex-direction: row | row-reverse | column | column-reverse*/
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background-color: #020925;
+}
+
+.mid-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0,0,0,.65);
+  padding: 19px 56px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.email input {
+  margin-right: 15px;
+  margin-bottom: 0;
+  font-size: 1.249rem;
+  padding: .743rem;
+  width: 240px;
+  border: 1px solid #C5C5C5;
+  border-radius: .25rem;
+  color: #555459;
+  /* Copied from slack website */
+}
+
+.email button {
+  font-size: 1.126rem;
+  opacity: 1;
+  margin: 0;
+  line-height: 3rem;
+  padding: 0;
+  width: 185px;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #56B68B;
+  border-radius: 4px;
+  background: #56B68B;
+  color: #FFF;
+}
+.info-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4.25rem;
+}
+
+
+.link-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #FFF;
+  padding: 40px 0 0;
+  color: #9E9EA6;
+  background-color: transparent;
+  border-top: 1px solid rgba(255,255,255,.1);
+}
+
+#sign-in {
+  display: inline-block;
+  padding: 10px 14px 12px;
+  line-height: 1em;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12pt;
+  margin-left: 17px;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.75);
+  box-sizing: border-box;
+}
+
+#main {
+  font-size: 30px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  font-size: .9375rem;
+  font-weight: 700;
+  margin-left: 9px;
+  position: relative;
+  cursor: pointer;
+  line-height: 1em;
+  padding: 8px 7px 9px;
+  border-radius: 5px;
+  opacity: .8;
+}
+nav ul li a:hover {
+  opacity: 1;
+  background: rgba(0,0,0,.1);
+}
+
+
+
+@media only screen and (max-width: 640px) {
+  .link-flex, .email {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-flex li a {
+    display: none;
+  }
+  nav ul li a {
+    display: none;
+  }
+  .email button {
+    margin-top: 15px;
+  }
+  .info-flex{
+    padding: 2rem
+}
